@@ -21,12 +21,18 @@
 <body>
 
     <header class="nav-bar">
-        <button class="nav-btn flex-column">
-            <div class="nav-btn-icon"></div>
-            <div class="nav-btn-icon"></div>
-            <div class="nav-btn-icon"></div>
+        <button class="nav-btn flex-column" id="hamburger-nav-btn">
+            <div class="nav-btn-icon" id="bar-1"></div>
+            <div class="nav-btn-icon" id="bar-2"></div>
+            <div class="nav-btn-icon" id="bar-3"></div>
         </button>
     </header>
+
+    <nav class="nav-menu" id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <nav class="hover-nav flex-container">
         <a href="#home">Home</a>
@@ -34,16 +40,16 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <section class="home flex-column" id="home">
+    <section class="home flex-column main-section" id="home">
         <img src="images/hero-img.png" srcset="images/hero-img.svg"
             alt="A hero image diplaying, &ldquo;&lt; VS /&gt;&rdquo; in large white font.">
-        <h1>“ Designer & Developer ”</h1>
+        <h1>“Designer & Developer”</h1>
     </section>
 
-    <section class="about flex-container" id="about">
+    <section class="about flex-container main-section" id="about">
 
         <section class="promo-box">
-            <h1>“ Critically Thinking of a Creative Solution ”</h1>
+            <h1>“Critically Thinking of a Creative Solution”</h1>
 
             <a href="portfolio-work.html">Portfolio Work</a>
 
@@ -63,8 +69,8 @@
         </article>
     </section>
 
-    <section class="contact flex-column" id="contact">
-        <h1>“ Start Creating Tomorrow’s Experiences, Today. ”</h1>
+    <section class="contact flex-column main-section" id="contact">
+        <h1>“Start Creating Tomorrow’s Experiences, Today.”</h1>
 
         <section class="flex-container">
 
@@ -100,6 +106,7 @@
         </section>
 
         <footer>
+            <p>&copy; valdetsemovski.com</p>
             <img src="images/footer-wave-design-dark.png" srcset="images/footer-wave-design-dark.svg"
                 alt="A simple wave vector shape design that is orage with a gradient and outer glow. ">
         </footer>
