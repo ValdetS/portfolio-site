@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entires) => {
         }
     })
 }, {
-    threshold: 0.6,
+    threshold: 0.4,
     
 })
 observer.observe(aboutSection);
@@ -72,7 +72,7 @@ const section1Observer = new IntersectionObserver((entries) => {
         } 
     })
 }, {
-    threshold: 1,
+    threshold: 0.5,
 })
 
 const section2Observer = new IntersectionObserver((entries) => {
@@ -90,7 +90,7 @@ const section2Observer = new IntersectionObserver((entries) => {
         } 
     })
 }, {
-    threshold: 0.8,
+    threshold: 0.4,
 })
 
 const section3Observer = new IntersectionObserver((entries) => {
@@ -108,7 +108,7 @@ const section3Observer = new IntersectionObserver((entries) => {
         } 
     })
 }, {
-    threshold: 0.8,
+    threshold: 0.5,
 })
 
 // sections.forEach((el) => sectionObserver.observe(el));
