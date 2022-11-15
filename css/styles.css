@@ -208,7 +208,6 @@
 }
 
 #model-box {
-    background-color: green;
     width: 350px;
     height: 500px;
     position: absolute;
@@ -577,7 +576,6 @@ footer p {
     }
 
     #model-box {
-        background-color: green;
         width: 100%;
         height: 350px;
         position: static;
