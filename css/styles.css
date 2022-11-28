@@ -208,12 +208,24 @@
 }
 
 #model-box {
-    width: 350px;
-    height: 500px;
+    width: 100%;
     position: absolute;
-    left: 55%;
-    top: 5%;
+    left: 0%;
+    bottom: 0%;
 }
+ #laptop {
+    position: absolute;
+    width: 99%;
+    left: -12%;
+    bottom: 0%; 
+    z-index: 1;
+ }
+ #smart-phone {
+    position: absolute;
+    left: 70%;
+    bottom: 0%; 
+    width: 40%;
+ }
 
 .info-box {
     gap: 15px;
@@ -532,9 +544,7 @@ footer p {
         background-color: #f6f5f2;
         height: auto;
         flex-direction: column;
-        gap: 15px;
-
-
+        gap: 25px;
     }
 
     .about>* {
@@ -548,7 +558,7 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 25px;
 
     }
 
@@ -578,12 +588,26 @@ footer p {
     #model-box {
         width: 100%;
         height: 350px;
-        position: static;
+        position: relative;
         left: 0%;
         top: 0%;
         margin: auto;
         /* display: none; */
+        margin-bottom: 5%;
     }
+    #laptop {
+        position: absolute;
+        width: 90%;
+        left: -10%;
+        bottom: 0%; 
+        z-index: 1;
+     }
+     #smart-phone {
+        position: absolute;
+        left: 60%;
+        bottom: 0%; 
+        width: 42%;
+     }
 
     .info-box {
         gap: 15px;
