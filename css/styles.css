@@ -375,6 +375,33 @@ footer p {
 }
 
 
+/* Portfolio Showcase */
+.portfolio-nav-bar {
+    box-shadow: 0px 0px 10px 1px #000000;
+
+}
+.portfolio-body {
+    background-color: #f6f5f2;
+    width: 100%;
+}
+.open-letter {
+    margin-top: 8%;
+    width: 100%;
+}
+.portfolio-showcase {
+    height: auto;
+}
+.portfolio-project {
+    width: 100%;
+}
+.portfolio-project img {
+    width: 50%;
+}
+.portfolio-footer p {
+    color: #000000;
+}
+
+
 /* Media Queries */
 @media (hover: hover) {
     .thank-you-box a:hover {
