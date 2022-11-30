@@ -378,25 +378,114 @@ footer p {
 /* Portfolio Showcase */
 .portfolio-nav-bar {
     box-shadow: 0px 0px 10px 1px #000000;
+    background-color: #f6f5f2;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 
 }
+.bread-crumbs {
+    display: flex;
+    font-family: OpenSans-italic;
+    margin-top: 20px;
+    margin-left: 5px;
+    gap: 5px;
+}
+.bread-crumbs li {
+    list-style: none;
+}
+.bread-crumbs a {
+    color: #000000;
+    font-family: OpenSans-italic;
+}
+
 .portfolio-body {
     background-color: #f6f5f2;
-    width: 100%;
+    align-items: center;
+    gap: 50px;
 }
 .open-letter {
     margin-top: 8%;
-    width: 100%;
+    width: 50%;
 }
-.portfolio-showcase {
-    height: auto;
+.open-letter h1 {
+    font-family: SourceSansPro-bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
 }
-.portfolio-project {
-    width: 100%;
+.open-letter p {
+    font-family: Roboto-light;
+    font-size: 1.4rem;
+    text-indent: 50px;
+}
+.open-letter :nth-child(3) {
+    text-indent: 0px;
+    margin-top: 20px;
+}
+.open-letter :nth-child(4) {
+    text-indent: 0px;
+}
+.project-showcase {
+}
+.project-info:nth-child(odd) > *{
+    justify-content: flex-end;
+    text-align: end;
+}
+.portfolio-project > * {
+    flex-basis: 100%;
 }
 .portfolio-project img {
     width: 50%;
 }
+.project-info {
+    padding: 50px 25px
+}
+.project-info h2 {
+    font-family: Roboto-regular;
+    font-size: 2.0rem;
+    margin-bottom: 40px;
+}
+.project-info p {
+    font-family: Roboto-light;
+    font-size: 1.2rem;
+}
+.project-info p:nth-child(2) {
+    margin-bottom: 40px;
+}
+.project-info i {
+    font-size: 40px;
+    margin: 5px;
+}
+.btns {
+    margin-top: 40px;
+    gap: 25px;
+}
+.btns img {
+    width: 10%;
+}
+.btns a {
+    font-family: OpenSans-regular;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0.2em 0.5em;
+    justify-content: space-evenly;
+}
+.learn-more-btn {
+    color: #000000;
+    border: 2px solid #000000;
+}
+.view-project-btn {
+    color: #f6b037;
+    border: 2px solid #f6b037;
+}
+
 .portfolio-footer p {
     color: #000000;
 }
@@ -405,6 +494,9 @@ footer p {
 /* Media Queries */
 @media (hover: hover) {
     .thank-you-box a:hover {
+        color: #f6b037;
+    }
+    .bread-crumbs a:hover {
         color: #f6b037;
     }
 }
