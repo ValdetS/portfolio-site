@@ -519,6 +519,24 @@ footer p {
     color: #000000;
 }
 
+/* Portfolio Project Page */
+.project-nav-bar {
+    box-shadow: 0px 0px 10px 1px #ffffff; 
+    background-color: #f6f5f2;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.project-body {
+    background-color: #171717;
+    align-items: center;
+    gap: 50px;
+}
+
 
 /* Media Queries */
 @media (hover: hover) {
@@ -533,9 +551,6 @@ footer p {
 
 @media only screen and (max-width: 414px) {
 
-    /* html {
-        font-size: 13px;
-    } */
     .nav-bar {
         background-color: #f6f5f2;
         position: fixed;
@@ -956,6 +971,7 @@ footer p {
         background-color: #f6f5f2;
         align-items: center;
         gap: 50px;
+        width: 100%;
     }
 
     .open-letter {
@@ -965,14 +981,14 @@ footer p {
 
     .open-letter h1 {
         font-family: SourceSansPro-bold;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         text-align: center;
         margin-bottom: 40px;
     }
 
     .open-letter p {
         font-family: Roboto-light;
-        font-size: 1.4rem;
+        font-size: 1.25rem;
         text-indent: 25px;
         margin: 0px 10px;
     }
@@ -988,6 +1004,7 @@ footer p {
 
     .project-showcase {
         gap: 20px;
+        width: 100%;
     }
 
     .project-info:nth-child(odd)>* {
@@ -1012,32 +1029,41 @@ footer p {
     }
 
     .project-info {
-        padding: 25px 12px
+        padding: 0px 0px
     }
 
     .project-info h2 {
         font-family: Roboto-regular;
-        font-size: 2.0rem;
+        font-size: 2.25rem;
         margin-bottom: 20px;
+        margin-left: 5px;
+        margin-top: 10px;
     }
 
     .project-info p {
         font-family: Roboto-light;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        width: 98%;
+        margin-left: 5px;
     }
 
     .project-info p:nth-child(2) {
         margin-bottom: 20px;
     }
 
+    .icon-container {
+        flex-wrap: wrap;
+    }
     .project-info i {
-        font-size: 40px;
-        margin: 5px;
+        font-size: 30px;
+        gap: 5px;
     }
 
     .btns {
+        flex-direction: column;
         margin-top: 20px;
         gap: 25px;
+        align-items: center;
     }
 
     .btns img {
@@ -1046,13 +1072,14 @@ footer p {
 
     .btns a {
         font-family: OpenSans-regular;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-decoration: none;
         border-radius: 55px;
         display: flex;
         align-items: center;
         padding: 0.2em 0.5em;
         justify-content: space-evenly;
+        width: 50%;
     }
 
     .learn-more-btn {
