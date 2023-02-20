@@ -35,6 +35,10 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -671,6 +675,12 @@ hr {
 
 #unity-icon {
     color: #ffffff;
+}
+
+.ref-link {
+    color: #f6b037;
+    font: 1.5rem Roboto-regular;
+    text-decoration: underline;
 }
 
 /* Media Queries */
@@ -1386,6 +1396,13 @@ hr {
         color: #ffffff;
         border: 2px solid #f6b037;
         width: 70%;
+    }
+
+    .ref-link {
+        color: #f6b037;
+        font: 1.25rem Roboto-regular;
+        text-decoration: underline;
+        display: inline;
     }
 
 
