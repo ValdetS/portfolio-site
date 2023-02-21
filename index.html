@@ -1,130 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Valdet Semovski</title>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <meta name="description"
-        content="Valdet Semovski's portfolio website, a site where you can learn more about Valdet and view his work. Valdet is a web developer with a strong understanding of graphic design and UX/UI. Having a passion for creativity and imagination, Valdet enjoys building unique and fun digital experiences.">
-        <!-- TO DO: add social media card meta data -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet" />
+        <title>Valdet Semovski</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+        <meta name="description"
+            content="Valdet Semovski's portfolio website, a site where you can learn more about Valdet and view his work. Valdet is a web developer with a strong understanding of graphic design and UX/UI. Having a passion for creativity and imagination, Valdet enjoys building unique and fun digital experiences.">
 
-    <script defer src="js/scripts.js"></script>
-    <script defer src="js/menu.js"></script>
+        <!-- TODO: add social media card meta data -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-</head>
+        <script defer src="js/scripts.js"></script>
+        <script defer src="js/menu.js"></script>
+    </head>
 
-<body>
+    <body>
+        <header class="nav-bar">
+            <button class="nav-btn flex-column" id="hamburger-nav-btn">
+                <div class="nav-btn-icon" id="bar-1"></div>
+                <div class="nav-btn-icon" id="bar-2"></div>
+                <div class="nav-btn-icon" id="bar-3"></div>
+            </button>
+        </header>
 
-    <header class="nav-bar">
-        <button class="nav-btn flex-column" id="hamburger-nav-btn">
-            <div class="nav-btn-icon" id="bar-1"></div>
-            <div class="nav-btn-icon" id="bar-2"></div>
-            <div class="nav-btn-icon" id="bar-3"></div>
-        </button>
-    </header>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="portfolio-work.html">Portfolio Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <nav class="nav-menu" id="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="portfolio-work.html">Portfolio Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav class="hover-nav flex-container">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <nav class="hover-nav flex-container">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <section class="home flex-column main-section" id="home">
+            <img src="images/hero-img.png" srcset="images/hero-img.svg"
+                alt="A hero image diplaying, &ldquo;&lt; VS /&gt;&rdquo; in large white font.">
+            <h1>“Designer & Developer”</h1>
+        </section>
 
-    <section class="home flex-column main-section" id="home">
-        <img src="images/hero-img.png" srcset="images/hero-img.svg"
-            alt="A hero image diplaying, &ldquo;&lt; VS /&gt;&rdquo; in large white font.">
-        <h1>“Designer & Developer”</h1>
-    </section>
+        <section class="about flex-container main-section" id="about">
+            <section class="promo-box">
+                <h1>“Critically Thinking of a Creative Solution”</h1>
 
-    <section class="about flex-container main-section" id="about">
+                <section id="model-box">
+                    <img src="images/laptop.png" alt="A laptop with some code displayed on the screen." id="laptop">
+                    <img src="images/smartphone.png" alt="A smart phone with a website mockup displayed on the screen."
+                        id="smart-phone">
+                </section>
 
-        <section class="promo-box">
-            <h1>“Critically Thinking of a Creative Solution”</h1>
-
-            <section id="model-box">
-                <img src="images/laptop.png" alt="A laptop with some code displayed on the screen." id="laptop">
-                <img src="images/smartphone.png" alt="A smart phone with a website mockup displayed on the screen."
-                    id="smart-phone">
-
+                <a href="portfolio-work.html">Portfolio Work</a>
             </section>
 
-
-
-            <a href="portfolio-work.html">Portfolio Work</a>
-
+            <article class="info-box flex-column">
+                <h1>&lt; Valdet Semovski /&gt;</h1>
+                <p>I'm a web developer with a strong understanding of graphic design and UX/UI. Having a passion for
+                    creativity and imagination, I enjoy building unique and fun digital experiences.</p>
+                <p>Thanks to my education in web design and interacive media, I was able to discover an avenue where I
+                    could
+                    blend my love for art and interest in technology. Through my 3 years of studies, I learned the
+                    skills
+                    needed to turn my ideas into experiences that I can share with the world.</p>
+            </article>
         </section>
 
-        <article class="info-box flex-column">
-            <h1>&lt; Valdet Semovski /&gt;</h1>
-            <p>I'm a web developer with a strong understanding of graphic design and UX/UI. Having a passion for
-                creativity and imagination, I enjoy building unique and fun digital experiences.</p>
-            <p>Thanks to my education in web design and interacive media, I was able to discover an avenue where I could
-                blend my love for art and interest in technology. Through my 3 years of studies, I learned the skills
-                needed to turn my ideas into experiences that I can share with the world.</p>
-        </article>
-    </section>
+        <section class="contact flex-column main-section" id="contact">
+            <h1>“Start Creating Tomorrow’s Experiences, Today.”</h1>
 
-    <section class="contact flex-column main-section" id="contact">
-        <h1>“Start Creating Tomorrow’s Experiences, Today.”</h1>
+            <section class="flex-container">
+                <article class="thank-you-box flex-column">
+                    <p>Thank you for visiting my site. I hope you enjoyed viewing <a href="portfolio-work.html">my
+                            work</a>.
+                        If
+                        you have any questions or are interested in speaking to me, feel free to email me.</p>
 
-        <section class="flex-container">
+                    <section class="flex-container">
+                        <img src="images/envelope-icon-2x.png" alt="A white envelope icon.">
+                        <a href="mailto:valdet@valdetsemovski.com">valdet@valdetsemovski.com</a>
+                    </section>
+                </article>
 
-            <article class="thank-you-box flex-column">
+                <section class="divider"></section>
 
-                <p>Thank you for visiting my site. I hope you enjoyed viewing <a href="portfolio-work.html">my work</a>.
-                    If
-                    you have any questions or are interested in speaking to me, feel free to email me.</p>
+                <article class="other-links-box flex-column">
+                    <p>Other Platforms</p>
 
-                <section class="flex-container">
-                    <img src="images/envelope-icon-2x.png" alt="A white envelope icon.">
-                    <a href="mailto:valdet@valdetsemovski.com">valdet@valdetsemovski.com</a>
-                </section>
+                    <p>I can also be found here.</p>
 
-            </article>
+                    <section class="flex-container">
+                        <a href="https://www.linkedin.com/in/valdet-s-0871ab1b8/" target="_blank"><i
+                                class="devicon-linkedin-plain"></i></a>
+                        <a href="https://github.com/ValdetS" target="_blank">
+                            <i class="devicon-github-original"></i>
+                        </a>
+                    </section>
+                </article>
+            </section>
 
-            <section class="divider"></section>
-
-            <article class="other-links-box flex-column">
-                <p>Other Platforms</p>
-                <p>I can also be found here.</p>
-
-                <section class="flex-container">
-                    <a href="https://www.linkedin.com/in/valdet-s-0871ab1b8/" target="_blank"><i
-                            class="devicon-linkedin-plain"></i></a>
-
-                    <a href="https://github.com/ValdetS" target="_blank">
-                        <i class="devicon-github-original"></i>
-
-                    </a>
-                </section>
-            </article>
-
+            <footer>
+                <p>&copy; valdetsemovski.com</p>
+                <img class="desktop-img" src="images/footer-wave-design-dark.png"
+                    srcset="images/footer-wave-design-dark.svg"
+                    alt="A simple wave vector shape design that is orage with a gradient and outer glow.">
+                <img class="mobile-img" src="images/footer-wave-design-dark.png"
+                    srcset="images/footer-wave-design-dark-mobile.svg"
+                    alt="A simple wave vector shape design that is orage with a gradient and outer glow.">
+            </footer>
         </section>
-
-        <footer>
-            <p>&copy; valdetsemovski.com</p>
-            <img class="desktop-img" src="images/footer-wave-design-dark.png"
-                srcset="images/footer-wave-design-dark.svg"
-                alt="A simple wave vector shape design that is orage with a gradient and outer glow. ">
-            <img class="mobile-img" src="images/footer-wave-design-dark.png"
-                srcset="images/footer-wave-design-dark-mobile.svg"
-                alt="A simple wave vector shape design that is orage with a gradient and outer glow. ">
-        </footer>
-    </section>
-
-</body>
+    </body>
 
 </html>

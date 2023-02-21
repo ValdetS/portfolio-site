@@ -10,7 +10,6 @@ hamburgerNav.addEventListener('click', () => {
         hamburgerNav.classList.add('open');
         menuOpen = true;
         navMenu.style.right = '0px';
-
     }
     else {
         hamburgerNav.classList.remove('open');

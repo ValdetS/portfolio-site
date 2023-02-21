@@ -29,36 +29,25 @@ function checkWidth() {
 
 // Change Carousel Contents Based On Web Page/HTML File
 if (urlFilename === 'intune-project-page.html') {
-    console.log(urlFilename);
     imgArray = intuneImgs;
     getMiniImgs(imgArray);
     displayImg.src = imgArray[counter];
     imgGlow(counter, 'start');
-
-
 } else if (urlFilename === 'sales-funnel-project-page.html') {
-    console.log(urlFilename);
     imgArray = weSaveOnPowerImgs;
     getMiniImgs(imgArray);
     displayImg.src = imgArray[counter];
     imgGlow(counter, 'start');
-
 } else if (urlFilename === 'card-fu-project-page.html') {
-    console.log(urlFilename);
     imgArray = cardFuImgs;
     getMiniImgs(imgArray);
     displayImg.src = imgArray[counter];
     imgGlow(counter, 'start');
-
-} else {
-    console.log('uh oh!')
 }
 
 function getMiniImgs(array) {
-
     // Check for mobile
     if (window.innerWidth < 414) {
-
         for (let i = 0; i < array.length; i++) {
             let img = document.createElement('div');
             img.classList.add('mobile-mini-img');
@@ -69,7 +58,6 @@ function getMiniImgs(array) {
 
             miniContainer.append(img);
         }
-
     } else {
         for (let i = 0; i < array.length; i++) {
             let img = document.createElement('img');
@@ -81,11 +69,8 @@ function getMiniImgs(array) {
 
             miniContainer.append(img);
         }
-
     }
-
 }
-
 
 let nextBtn = document.querySelector('#carousel-next-btn');
 let prevBtn = document.querySelector('#carousel-prev-btn');
@@ -94,33 +79,22 @@ nextBtn.addEventListener('click', next);
 prevBtn.addEventListener('click', prev);
 
 function next() {
-    console.log('clicked!')
     counter += 1;
-
     if (counter >= imgArray.length) {
         counter = 0;
     }
-
     changeImg(counter);
     imgGlow(counter, 'next');
-
-
-    console.log(counter)
 }
 
 function prev() {
-    console.log('clicked!')
     counter -= 1;
     if (counter < 0) {
         counter = imgArray.length - 1;
     }
-
     changeImg(counter);
     imgGlow(counter, 'previous');
-
 }
-
-
 
 function changeImg() {
     displayImg.src = imgArray[counter];
@@ -133,8 +107,6 @@ function selectImg() {
 }
 
 function imgGlow(id, input) {
-
-
     if (window.screen.width < 414) {
         // Gets Nodelist of elements
         let allMinis = document.querySelectorAll('.mobile-mini-img');
@@ -142,7 +114,6 @@ function imgGlow(id, input) {
         for (let i = 0; i < allMinis.length; i++) {
             allMinis[i].style.boxShadow = 'none';
             allMinis[i].style.backgroundColor = '#ffffff';
-
         }
     } else {
         // Gets Nodelist of elements
@@ -155,38 +126,26 @@ function imgGlow(id, input) {
         }
     }
 
-
-
     let currentImg = document.getElementById(id);
 
     if (input == 'select') {
-
-
         currentImg.style.boxShadow = '0px 0px 10px 1px #ffffff';
         currentImg.style.backgroundColor = '#000000';
-
     } else {
         currentImg.style.boxShadow = '0px 0px 10px 1px #ffffff';
         currentImg.style.backgroundColor = '#000000';
-
-
     }
-
 
     if (input == 'next') {
         if (id == 0) {
             let lastImg = document.getElementById(imgArray.length - 1);
             lastImg.style.boxShadow = 'none';
             lastImg.style.backgroundColor = '#ffffff';
-
-
         } else {
             let lastImg = document.getElementById(id - 1);
             lastImg.style.boxShadow = 'none';
-            lastImg.style.backgroundColor = '#ffffff';
 
         }
-
     }
 
     if (input == 'previous') {
@@ -194,14 +153,10 @@ function imgGlow(id, input) {
             let lastImg = document.getElementById(0);
             lastImg.style.boxShadow = 'none';
             lastImg.style.backgroundColor = '#ffffff';
-
         } else {
             let lastImg = document.getElementById(id + 1);
             lastImg.style.boxShadow = 'none';
             lastImg.style.backgroundColor = '#ffffff';
-
         }
-
     }
-
 }

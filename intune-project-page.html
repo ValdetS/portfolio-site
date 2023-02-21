@@ -2,25 +2,20 @@
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Valdet Semovski</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Valdet Semovski</title>
-            <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-            <link href="css/styles.css" rel="stylesheet" />
-
-            <script defer src="js/menu.js"></script>
-            <script defer src="js/carousel.js"></script>
-
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-        </head>
+        <script defer src="js/menu.js"></script>
+        <script defer src="js/carousel.js"></script>
     </head>
 
     <body>
-
         <header class="project-nav-bar">
             <ul class="bread-crumbs">
                 <li><a href="index.html">Home</a></li>
@@ -28,7 +23,6 @@
                 <li><a href="portfolio-work.html">Portfolio Work</a></li>
                 <li>></li>
                 <li><a href="intune-project-page.html">InTune</a></li>
-
             </ul>
 
             <button class="nav-btn flex-column" id="hamburger-nav-btn">
@@ -46,8 +40,6 @@
         </nav>
 
         <section class="project-body flex-column">
-
-            <!-- Title Container -->
             <section class="title-container">
                 <h1 class="title-effect">InTune</h1>
                 <h1 class="title">InTune</h1>
@@ -57,20 +49,21 @@
 
             <section class="overview">
                 <h2>Overview</h2>
+
                 <p>InTune is a music selction tool. Using different APIs this web app allows you to find music
                     based on your mood, activity, the time of day, or weather. It's a fun way to discover new
-                    music, and an easiar way to find a soundtrack to fit your surroundings.</p>
+                    music, and an easier way to find a soundtrack to fit your surroundings.</p>
 
-                    <p>The goal for this project was to work with an API. You know what's better than one API? Two APIs! After some thinking I decided that instead of building a project around just one API, I could combine different APIs together. By doing so I would be able to make a fun experience that is actually useful. Since I was working with APIs it made sense to build this proejct as a web app.</p>
+                <p>The goal for this project was to work with an API. You know what's better than one API? Two APIs!
+                    After some thinking I decided that instead of building a project around just one API, I could
+                    combine different APIs together. By doing so I would be able to make a fun experience that is
+                    actually useful. Since I was working with APIs it made sense to build this project as a web app.</p>
             </section>
 
             <div class="carousel flex-column">
-
-
                 <img id="display-img">
 
                 <div class="controls-container flex-container">
-
                     <button class="carousel-btn" id="carousel-prev-btn"><img
                             src="images/prev-arrow-icon-2x.png"></button>
 
@@ -78,10 +71,7 @@
 
                     <button class="carousel-btn" id="carousel-next-btn"><img
                             src="images/next-arrow-icon-2x.png"></button>
-
-
                 </div>
-
             </div>
 
             <section class="tech-container">
@@ -98,30 +88,42 @@
                 </section>
             </section>
 
-
-
-
             <hr>
 
             <section class="components">
                 <h2>Key Components</h2>
-                <p>The main takeaways of this project are, the use of the <a href="https://developer.spotify.com/documentation/web-api/" title="Visit https://developer.spotify.com/documentation/web-api/" target="_blank" class="ref-link">Spotify Web API</a> and <a href="https://openweathermap.org/api" title="Visit https://openweathermap.org/api" target="_blank" class="ref-link">OpenWeather WeatherAPI</a>, as well as the Node.js web app.</p>
 
-                <p>Spotify has many playlists to chose from and many more curated from its users. This was essential for my project. InTune's simple UI allows users to discover these playlists in an easiar and more interactive way.</p>
+                <p>The main takeaways of this project are the use of the <a
+                        href="https://developer.spotify.com/documentation/web-api/"
+                        title="Visit https://developer.spotify.com/documentation/web-api/" target="_blank"
+                        class="ref-link">Spotify Web API</a>, <a href="https://openweathermap.org/api"
+                        title="Visit https://openweathermap.org/api" target="_blank" class="ref-link">OpenWeather
+                        WeatherAPI</a>, as well as the Node.js web app.</p>
 
-                <p>The OpenWeather WeatherAPI really enhances this project. If allowed location access, InTune will automatically find playlists based on you current weather conditions for you.</p>
+                <p>Spotify has many playlists to chose from and many more curated from its users. This was essential for
+                    my project. InTune's simple UI allows users to discover these playlists in an easier and more
+                    interactive way.</p>
 
-                <p>Finally, the Node.js web app itself. Since I wanted to make API requests more securely, it made sense to create a back end server that would make those requests for me. Another detail about my web app is that I decided to not have a user login system. The reason being is that it eliminates a big friction point for users. Since I want people to experience my portoflio project, it is crucial that they have easy access to it.</p>
+                <p>The OpenWeather WeatherAPI really enhances this project. If allowed location access, InTune will
+                    automatically find playlists based on your current weather conditions.</p>
 
+                <p>Finally, the Node.js web app itself. Since I wanted to make API requests more securely, it made sense
+                    to create a back end server that would make those requests for me. Another detail about my web app
+                    is that I decided against having a user login system. The reason being is that it eliminates a big
+                    friction point for users. Since I want people to experience my portoflio project, it is crucial that
+                    they have easy access to it.</p>
             </section>
 
             <hr>
 
             <section class="thoughts">
                 <h2>Final Thoughts</h2>
-                <p>InTune is a project that has alot of potential. In my opinion, the concept is viable enough to be an actual proudct. Given the right resources this demo can be the first step in that process. Regardless of the challenges, the experience was worth it. I'm proud of the results I got, and I'm excited to be able to showcase them with others.</p>
-            </section>
 
+                <p>InTune is a project that has alot of potential. In my opinion, the concept is viable enough to be an
+                    actual product. Given the right resources this demo can be the first step in that process.
+                    Regardless of the challenges, the experience was worth it. I'm proud of the results I got, and I'm
+                    excited to be able to showcase them with others.</p>
+            </section>
 
             <div class="project-btns flex-container">
                 <a href="https://github.com/ValdetS/InTune" target="_blank" class="github-btn"> Github Repository <img
@@ -134,16 +136,12 @@
                 <p>&copy; valdetsemovski.com</p>
                 <img class="desktop-img" src="images/footer-wave-design-dark.png"
                     srcset="images/footer-wave-design-dark.svg"
-                    alt="A simple wave vector shape design that is orage with a gradient and outer glow. ">
+                    alt="A simple wave vector shape design that is orage with a gradient and outer glow.">
                 <img class="mobile-img" src="images/footer-wave-design-dark.png"
                     srcset="images/footer-wave-design-dark-mobile.svg"
-                    alt="A simple wave vector shape design that is orage with a gradient and outer glow. ">
+                    alt="A simple wave vector shape design that is orage with a gradient and outer glow.">
             </footer>
-
-
         </section>
-
-
     </body>
 
 </html>

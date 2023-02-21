@@ -9,7 +9,6 @@ const observer = new IntersectionObserver((entires) => {
         if (entry.isIntersecting) {
             hoverNav.style.boxShadow = '0px 0px 10px 1px #000000';
             navBar.style.boxShadow = '0px -5px 25px 2px #000000';
-
         }
         else {
             hoverNav.style.boxShadow = '0px 0px 10px 1px #ffffff';
@@ -18,23 +17,13 @@ const observer = new IntersectionObserver((entires) => {
     })
 }, {
     threshold: 0.4,
-    
 })
 observer.observe(aboutSection);
-
 
 const sections = document.querySelectorAll('.main-section');
 const navLink1 = document.querySelector('.hover-nav a:nth-child(1)');
 const navLink2 = document.querySelector('.hover-nav a:nth-child(2)');
 const navLink3 = document.querySelector('.hover-nav a:nth-child(3)');
-
-// const activeLinkStyle = {
-//     color: '#ffffff',
-//     backgroundColor: '#000000',
-//     padding: '0px 20px'
-// }
-
-// Object.assign(button.style, style);
 
 const section1Observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -42,7 +31,6 @@ const section1Observer = new IntersectionObserver((entries) => {
             navLink1.style.color = '#ffffff';
             navLink1.style.backgroundColor = '#000000';
             navLink1.style.padding = '0px 20px';
-
         }
         else {
             navLink1.style.color = '#000000';
@@ -60,7 +48,6 @@ const section2Observer = new IntersectionObserver((entries) => {
             navLink2.style.color = '#ffffff';
             navLink2.style.backgroundColor = '#000000';
             navLink2.style.padding = '0px 20px';
-
         }
         else {
             navLink2.style.color = '#000000';
@@ -78,7 +65,6 @@ const section3Observer = new IntersectionObserver((entries) => {
             navLink3.style.color = '#ffffff';
             navLink3.style.backgroundColor = '#000000';
             navLink3.style.padding = '0px 20px';
-
         }
         else {
             navLink3.style.color = '#000000';
