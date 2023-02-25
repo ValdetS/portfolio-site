@@ -1,8 +1,8 @@
+// Nav Elements Scrolling Animations
 const hoverNav = document.querySelector('.hover-nav');
 const navBar = document.querySelector('.nav-bar');
 
 const aboutSection = document.querySelector('.about');
-
 const observer = new IntersectionObserver((entires) => {
     entires.forEach((entry) => {
         // console.log(entry);
@@ -76,7 +76,24 @@ const section3Observer = new IntersectionObserver((entries) => {
     threshold: 0.5,
 })
 
-// sections.forEach((el) => sectionObserver.observe(el));
 section1Observer.observe(sections[0]);
 section2Observer.observe(sections[1]);
 section3Observer.observe(sections[2]);
+
+// Scrolling Animations
+const hiddenElements = document.querySelectorAll('.hidden');
+const offScreen = document.querySelector('.off-screen');
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            offScreen.classList.add('on-screen');
+        } else {
+            entry.target.classList.remove('show');
+            offScreen.classList.remove('on-screen');
+        }
+    });
+}, {threshold: 0.55,});
+
+hiddenElements.forEach((el) => scrollObserver.observe(el));
